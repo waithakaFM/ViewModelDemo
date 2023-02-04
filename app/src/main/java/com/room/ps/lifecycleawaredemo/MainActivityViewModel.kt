@@ -7,6 +7,7 @@ import java.util.*
 
 class MainActivityViewModel: ViewModel() {
 
+	// Use the livedata: Any change in it can be observed
 	private lateinit var myRandomNumber: MutableLiveData<String>
 
 	fun getNumber(): MutableLiveData<String> {
