@@ -21,7 +21,9 @@ class MainActivity : AppCompatActivity() {
 
         val myRandomNumber = model.getNumber()
         val tvNumber = findViewById<TextView>(R.id.tvNumber)
+        
 
+        //Updating the ui with Livedata
         myRandomNumber.observe(this, Observer<String> { number ->
             tvNumber.text = number
             Log.i(TAG, "Random Number set")
