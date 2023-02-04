@@ -14,6 +14,7 @@ class MainActivityViewModel: ViewModel() {
 
 		Log.i(TAG, "Get number")
 
+		// Return livedata object to our main activity
 		if (!::myRandomNumber.isInitialized) {
 			myRandomNumber = MutableLiveData()
 			this.createNumber()
